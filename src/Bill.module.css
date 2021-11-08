@@ -1,0 +1,24 @@
+.bill {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.billLabel {
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+
+.billContainer {
+  display: flex;
+  background-color: var(--Light-grayish-cyan);
+  width: 100%;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--Very-dark-cyan);
+}
