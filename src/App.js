@@ -5,7 +5,7 @@ import Bill from './Bill';
 import SelectTip from './SelectTip';
 
 function App() {
-  const [billAmount, setBillAmount] = useState('100');
+  const [billAmount, setBillAmount] = useState('0');
 
   return (
     <div className='App'>
@@ -13,7 +13,7 @@ function App() {
         <img src={logo} alt='Spillter Logo' />
       </div>
       <div className='calculator'>
-        <Bill billAmount={billAmount} />
+        <Bill billAmount={billAmount} setBillAmount={setBillAmount} />
         <SelectTip />
       </div>
     </div>

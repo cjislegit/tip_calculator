@@ -22,3 +22,19 @@
   justify-content: space-between;
   color: var(--Very-dark-cyan);
 }
+
+.billContainer input[type='text'] {
+  background-color: var(--Light-grayish-cyan);
+  border: none;
+  line-height: 30px;
+  display: flex;
+  text-align: end;
+  width: 95%;
+  font-size: large;
+  color: var(--Very-dark-cyan);
+  font-weight: 700;
+}
+
+.billContainer input[type='text']:focus {
+  outline: none;
+}

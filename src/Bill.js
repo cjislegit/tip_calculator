@@ -1,7 +1,7 @@
 import styles from './Bill.module.css';
 import dollar from './assets/icon-dollar.svg';
 
-const Bill = ({ billAmount }) => {
+const Bill = ({ billAmount, setBillAmount }) => {
   return (
     <div className={styles.bill}>
       <div className={styles.billLabel}>Bill</div>
@@ -11,7 +11,11 @@ const Bill = ({ billAmount }) => {
           src={dollar}
           alt='Dollar symbol'
         />
-        <div className={styles.billAmount}>{billAmount}</div>
+        <input
+          type='text'
+          value={billAmount}
+          onChange={(e) => setBillAmount(e.target.value)}
+        />
       </div>
     </div>
   );
