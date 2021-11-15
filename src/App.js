@@ -5,7 +5,8 @@ import Bill from './Bill';
 import SelectTip from './SelectTip';
 
 function App() {
-  const [billAmount, setBillAmount] = useState('0');
+  const [billAmount, setBillAmount] = useState(0);
+  const [tipAmout, setTipAmount] = useState(5);
 
   return (
     <div className='App'>
@@ -14,7 +15,7 @@ function App() {
       </div>
       <div className='calculator'>
         <Bill billAmount={billAmount} setBillAmount={setBillAmount} />
-        <SelectTip />
+        <SelectTip setTipAmount={setTipAmount} />
       </div>
     </div>
   );

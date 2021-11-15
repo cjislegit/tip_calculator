@@ -1,19 +1,37 @@
 import styles from './SelectTip.module.css';
 
-const SelectTip = () => {
+const SelectTip = ({ setTipAmount }) => {
   return (
     <div className={styles.selectTip}>
       <div className={styles.selectTipLabel}>Select Tip %</div>
       <div className={styles.selectTipContainer}>
         <div className={styles.selectTipRowR}>
-          <input type='button' value='5%' />
-          <input type='button' value='15%' />
-          <input type='button' value='50%' />
+          <button
+            value='5'
+            autoFocus
+            onClick={(e) => setTipAmount(e.target.value)}
+          >
+            5%
+          </button>
+          <button value='15' onClick={(e) => setTipAmount(e.target.value)}>
+            15%
+          </button>
+          <button value='50' onClick={(e) => setTipAmount(e.target.value)}>
+            50%
+          </button>
         </div>
         <div className={styles.selectTipRowL}>
-          <input type='button' value='10%' />
-          <input type='button' value='25%' />
-          <input type='text' placeholder='Custom' />
+          <button value='10' onClick={(e) => setTipAmount(e.target.value)}>
+            10%
+          </button>
+          <button value='25' onClick={(e) => setTipAmount(e.target.value)}>
+            25%
+          </button>
+          <input
+            type='text'
+            placeholder='Custom'
+            onChange={(e) => setTipAmount(e.target.value)}
+          />
         </div>
       </div>
     </div>

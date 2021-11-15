@@ -22,23 +22,25 @@
   flex-direction: column;
 }
 
-.selectTipContainer input {
+.selectTipContainer input,
+button {
   height: 45px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: none;
 }
 
-.selectTipContainer input[type='button'] {
+.selectTipContainer button {
   background-color: var(--Very-dark-cyan);
   color: white;
   font-weight: 700;
   font-size: large;
 }
 
-.selectTipContainer input[type='button']:focus {
+.selectTipContainer button:focus {
   background-color: var(--Strong-cyan);
   color: var(--Very-dark-cyan);
+  outline: none;
 }
 
 .selectTipContainer input[type='text'] {
