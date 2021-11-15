@@ -4,6 +4,35 @@
   flex-direction: column;
   width: 80%;
   min-width: 80%;
-  margin-top: 30px;
+  margin: 30px 0;
   background-color: var(--Very-dark-cyan);
+  border-radius: 15px;
+  padding: 30px 15px 5px 15px;
+}
+
+.total div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.totalLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.totalTop {
+  color: var(--White);
+  font-size: medium;
+  margin-bottom: 5px !important;
+}
+
+.totalBottom {
+  font-size: small;
+  color: var(--Dark-blueish-cyan);
+}
+
+.totalRight {
+  font-size: xx-large;
+  color: var(--Strong-cyan);
 }
