@@ -1,0 +1,40 @@
+.numberOfPeople {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.numberOfPeopleLabel {
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+
+.numberOfPeopleContainer {
+  display: flex;
+  background-color: var(--Light-grayish-cyan);
+  width: 100%;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--Very-dark-cyan);
+}
+
+.numberOfPeopleContainer input[type='text'] {
+  background-color: var(--Light-grayish-cyan);
+  border: none;
+  line-height: 30px;
+  display: flex;
+  text-align: end;
+  width: 95%;
+  font-size: large;
+  color: var(--Very-dark-cyan);
+  font-weight: 700;
+}
+
+.numberOfPeopleContainer input[type='text']:focus {
+  outline: none;
+}
