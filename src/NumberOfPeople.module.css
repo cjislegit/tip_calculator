@@ -38,3 +38,7 @@
 .numberOfPeopleContainer input[type='text']:focus {
   outline: none;
 }
+
+.numberOfPeopleContainer img {
+  height: 100%;
+}

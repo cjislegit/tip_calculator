@@ -38,3 +38,7 @@
 .billContainer input[type='text']:focus {
   outline: none;
 }
+
+.billContainer img {
+  height: 100%;
+}
