@@ -4,6 +4,7 @@ import logo from './assets/logo.svg';
 import Bill from './Bill';
 import NumberOfPeople from './NumberOfPeople';
 import SelectTip from './SelectTip';
+import Total from './Total';
 
 function App() {
   const [billAmount, setBillAmount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
           numberOfPeople={numberOfPeople}
           setNumberOfPeople={setNumberOfPeople}
         />
+        <Total tipAmout={tipAmout} />
       </div>
     </div>
   );

@@ -1,0 +1,9 @@
+.total {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 80%;
+  min-width: 80%;
+  margin-top: 30px;
+  background-color: var(--Very-dark-cyan);
+}
