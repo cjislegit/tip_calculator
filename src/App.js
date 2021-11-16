@@ -10,6 +10,8 @@ function App() {
   const [billAmount, setBillAmount] = useState(0);
   const [tipAmout, setTipAmount] = useState(5);
   const [numberOfPeople, setNumberOfPeople] = useState(1);
+  const [tipTotal, setTipTotal] = useState(0);
+  const [total, setTotal] = useState(0);
 
   return (
     <div className='App'>
@@ -23,7 +25,7 @@ function App() {
           numberOfPeople={numberOfPeople}
           setNumberOfPeople={setNumberOfPeople}
         />
-        <Total tipAmout={tipAmout} />
+        <Total tipTotal={tipTotal} total={total} />
       </div>
     </div>
   );
