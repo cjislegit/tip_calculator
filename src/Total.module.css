@@ -36,3 +36,10 @@
   font-size: xx-large;
   color: var(--Strong-cyan);
 }
+
+.total button {
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+  font-size: large;
+  font-weight: 700;
+}
