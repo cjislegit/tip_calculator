@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import logo from './assets/logo.svg';
 import Bill from './Bill';
@@ -13,13 +13,26 @@ function App() {
   const [tipTotal, setTipTotal] = useState(0);
   const [total, setTotal] = useState(0);
 
+  const handleTotals = () => {
+    if (billAmount) {
+      setTipTotal((tipAmout / 100) * billAmount);
+      setTotal(parseFloat(tipTotal) + parseFloat(billAmount));
+    }
+  };
+
+  useEffect(handleTotals, [billAmount, tipTotal]);
+
   return (
     <div className='App'>
       <div className='pageLogo'>
         <img src={logo} alt='Spillter Logo' />
       </div>
       <div className='calculator'>
-        <Bill billAmount={billAmount} setBillAmount={setBillAmount} />
+        <Bill
+          billAmount={billAmount}
+          setBillAmount={setBillAmount}
+          handleTotals={handleTotals}
+        />
         <SelectTip setTipAmount={setTipAmount} />
         <NumberOfPeople
           numberOfPeople={numberOfPeople}

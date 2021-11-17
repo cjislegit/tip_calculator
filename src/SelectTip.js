@@ -7,24 +7,24 @@ const SelectTip = ({ setTipAmount }) => {
       <div className={styles.selectTipContainer}>
         <div className={styles.selectTipRowR}>
           <button
-            value='5'
+            value='.05'
             autoFocus
             onClick={(e) => setTipAmount(e.target.value)}
           >
             5%
           </button>
-          <button value='15' onClick={(e) => setTipAmount(e.target.value)}>
+          <button value='.15' onClick={(e) => setTipAmount(e.target.value)}>
             15%
           </button>
-          <button value='50' onClick={(e) => setTipAmount(e.target.value)}>
+          <button value='.50' onClick={(e) => setTipAmount(e.target.value)}>
             50%
           </button>
         </div>
         <div className={styles.selectTipRowL}>
-          <button value='10' onClick={(e) => setTipAmount(e.target.value)}>
+          <button value='.10' onClick={(e) => setTipAmount(e.target.value)}>
             10%
           </button>
-          <button value='25' onClick={(e) => setTipAmount(e.target.value)}>
+          <button value='.25' onClick={(e) => setTipAmount(e.target.value)}>
             25%
           </button>
           <input
