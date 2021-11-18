@@ -1,6 +1,6 @@
 import styles from './Total.module.css';
 
-const Total = ({ tipTotal, total }) => {
+const Total = ({ tipTotal, total, handleReset }) => {
   return (
     <div className={styles.total}>
       <div className={styles.totalTipAmount}>
@@ -17,7 +17,9 @@ const Total = ({ tipTotal, total }) => {
         </div>
         <div className={styles.totalRight}>${total}</div>
       </div>
-      <button className={styles.totalReset}>RESET</button>
+      <button className={styles.totalReset} onClick={handleReset}>
+        RESET
+      </button>
     </div>
   );
 };

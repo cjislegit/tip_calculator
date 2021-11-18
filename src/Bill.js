@@ -1,7 +1,7 @@
 import styles from './Bill.module.css';
 import dollar from './assets/icon-dollar.svg';
 
-const Bill = ({ billAmount, setBillAmount, handleTotals }) => {
+const Bill = ({ billAmount, setBillAmount }) => {
   return (
     <div className={styles.bill}>
       <div className={styles.billLabel}>Bill</div>

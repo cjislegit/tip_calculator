@@ -8,19 +8,33 @@ import Total from './Total';
 
 function App() {
   const [billAmount, setBillAmount] = useState(0);
-  const [tipAmout, setTipAmount] = useState(5);
+  const [tipAmount, setTipAmount] = useState(5);
   const [numberOfPeople, setNumberOfPeople] = useState(1);
   const [tipTotal, setTipTotal] = useState(0);
   const [total, setTotal] = useState(0);
 
   const handleTotals = () => {
     if (billAmount) {
-      setTipTotal((tipAmout / 100) * billAmount);
-      setTotal(parseFloat(tipTotal) + parseFloat(billAmount));
+      setTipTotal(
+        (((tipAmount / 100) * billAmount) / numberOfPeople).toFixed(2)
+      );
+      setTotal(
+        (
+          (parseFloat(tipTotal) * numberOfPeople + parseFloat(billAmount)) /
+          numberOfPeople
+        ).toFixed(2)
+      );
     }
   };
 
-  useEffect(handleTotals, [billAmount, tipTotal]);
+  const handleReset = () => {
+    setTipTotal(0);
+    setTotal(0);
+    setTipAmount(5);
+    setBillAmount(0);
+  };
+
+  useEffect(handleTotals, [billAmount, tipTotal, tipAmount, numberOfPeople]);
 
   return (
     <div className='App'>
@@ -38,7 +52,7 @@ function App() {
           numberOfPeople={numberOfPeople}
           setNumberOfPeople={setNumberOfPeople}
         />
-        <Total tipTotal={tipTotal} total={total} />
+        <Total tipTotal={tipTotal} total={total} handleReset={handleReset} />
       </div>
     </div>
   );
