@@ -24,6 +24,10 @@ function App() {
           numberOfPeople
         ).toFixed(2)
       );
+    } else if (billAmount == 0) {
+      setTipTotal(0);
+      setTotal(0);
+      setTipAmount(5);
     }
   };
 
