@@ -49,3 +49,10 @@ html {
   flex-direction: column;
   max-width: 1440px;
 }
+
+@media (min-width: 900px) {
+  .calculator {
+    max-height: 600px;
+    border-radius: 50px;
+  }
+}
