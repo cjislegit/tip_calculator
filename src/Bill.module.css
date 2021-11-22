@@ -42,3 +42,12 @@
 .billContainer img {
   height: 100%;
 }
+
+@media (min-width: 900px) {
+  .bill {
+    align-self: flex-start;
+    flex: 1;
+    justify-self: center;
+    margin-top: 0;
+  }
+}

@@ -52,7 +52,12 @@ html {
 
 @media (min-width: 900px) {
   .calculator {
-    max-height: 600px;
+    max-height: 500px;
     border-radius: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 33%;
+    max-width: 900px;
+    padding: 50px;
   }
 }

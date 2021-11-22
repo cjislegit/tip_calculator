@@ -42,3 +42,10 @@
 .numberOfPeopleContainer img {
   height: 100%;
 }
+
+@media (min-width: 900px) {
+  .numberOfPeople {
+    grid-column-start: 1;
+    justify-self: center;
+  }
+}

@@ -55,3 +55,10 @@ button {
 .selectTipContainer input[type='text']::placeholder {
   color: var(--Very-dark-cyan);
 }
+
+@media (min-width: 900px) {
+  .selectTip {
+    grid-column-start: 1;
+    justify-self: center;
+  }
+}
