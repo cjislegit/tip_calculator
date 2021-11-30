@@ -12,6 +12,7 @@ function App() {
   const [numberOfPeople, setNumberOfPeople] = useState(1);
   const [tipTotal, setTipTotal] = useState(0);
   const [total, setTotal] = useState(0);
+  const [activeButton, setActiveButton] = useState(5);
 
   const handleTotals = () => {
     if (billAmount) {
@@ -51,7 +52,7 @@ function App() {
           setBillAmount={setBillAmount}
           handleTotals={handleTotals}
         />
-        <SelectTip setTipAmount={setTipAmount} />
+        <SelectTip setTipAmount={setTipAmount} activeButton={activeButton} />
         <NumberOfPeople
           numberOfPeople={numberOfPeople}
           setNumberOfPeople={setNumberOfPeople}
