@@ -12,7 +12,7 @@ function App() {
   const [numberOfPeople, setNumberOfPeople] = useState(1);
   const [tipTotal, setTipTotal] = useState(0);
   const [total, setTotal] = useState(0);
-  const [activeButton, setActiveButton] = useState(5);
+  const [activeButton, setActiveButton] = useState('5');
 
   const handleTotals = () => {
     if (billAmount) {

@@ -43,7 +43,7 @@ const SelectTip = ({ setTipAmount, activeButton, handleTip }) => {
         <input
           type='text'
           placeholder='Custom'
-          onChange={(e) => setTipAmount(e.target.value)}
+          onChange={(e) => handleTip(e.target.value)}
         />
       </div>
     </div>

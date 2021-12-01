@@ -49,6 +49,10 @@ button {
   font-weight: 700;
 }
 
+.selectTipContainer input[type='text']:focus {
+  outline-color: var(--Strong-cyan);
+}
+
 .selectTipContainer input[type='text']::placeholder {
   color: var(--Very-dark-cyan);
 }
