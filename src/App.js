@@ -39,6 +39,11 @@ function App() {
     setBillAmount(0);
   };
 
+  const handleTip = (value) => {
+    setTipAmount(value);
+    setActiveButton(value);
+  };
+
   useEffect(handleTotals, [billAmount, tipTotal, tipAmount, numberOfPeople]);
 
   return (
@@ -52,7 +57,11 @@ function App() {
           setBillAmount={setBillAmount}
           handleTotals={handleTotals}
         />
-        <SelectTip setTipAmount={setTipAmount} activeButton={activeButton} />
+        <SelectTip
+          setTipAmount={setTipAmount}
+          activeButton={activeButton}
+          handleTip={handleTip}
+        />
         <NumberOfPeople
           numberOfPeople={numberOfPeople}
           setNumberOfPeople={setNumberOfPeople}
