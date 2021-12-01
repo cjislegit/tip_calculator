@@ -55,5 +55,7 @@
 
   .total button {
     justify-self: end;
+    width: 100%;
+    max-width: 100%;
   }
 }
