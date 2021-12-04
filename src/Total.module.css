@@ -42,6 +42,8 @@
   color: var(--Very-dark-cyan);
   font-size: large;
   font-weight: 700;
+  width: 100%;
+  max-width: 100%;
 }
 
 @media (min-width: 900px) {
