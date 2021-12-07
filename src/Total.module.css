@@ -14,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  justify-self: flex-start;
 }
 
 .totalLeft {
@@ -38,12 +39,19 @@
 }
 
 .total button {
-  background-color: var(--Strong-cyan);
   color: var(--Very-dark-cyan);
   font-size: large;
   font-weight: 700;
   width: 100%;
   max-width: 100%;
+}
+
+.inactive {
+  background-color: var(--Dark-grayish-cyan);
+}
+
+.active {
+  background-color: var(--Strong-cyan);
 }
 
 @media (min-width: 900px) {
@@ -56,6 +64,6 @@
   }
 
   .total button {
-    justify-self: end;
+    align-self: flex-end;
   }
 }
