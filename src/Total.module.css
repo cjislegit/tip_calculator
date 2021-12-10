@@ -61,6 +61,22 @@
     grid-row-start: 1;
     grid-row-end: 4;
     justify-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .total div {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .total .totalLeft {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .total .totalRight {
+    justify-content: flex-end;
   }
 
   .total button {
