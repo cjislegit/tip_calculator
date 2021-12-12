@@ -8,7 +8,7 @@
 
 .selectTipLabel {
   align-self: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .selectTipContainer {
@@ -61,11 +61,12 @@ button {
   .selectTip {
     grid-column-start: 1;
     justify-self: center;
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .selectTipContainer input,
   button {
     width: 30%;
+    height: 35px;
   }
 }
