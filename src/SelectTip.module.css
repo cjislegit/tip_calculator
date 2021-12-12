@@ -61,6 +61,7 @@ button {
   .selectTip {
     grid-column-start: 1;
     justify-self: center;
+    margin-top: 0;
   }
 
   .selectTipContainer input,

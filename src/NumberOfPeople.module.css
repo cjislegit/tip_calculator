@@ -47,5 +47,10 @@
   .numberOfPeople {
     grid-column-start: 1;
     justify-self: center;
+    margin-top: 0;
+  }
+
+  .numberOfPeopleContainer input[type='text'] {
+    line-height: 20px;
   }
 }

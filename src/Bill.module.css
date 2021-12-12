@@ -50,4 +50,12 @@
     justify-self: center;
     margin-top: 0;
   }
+
+  .billContainer input[type='text'] {
+    line-height: 20px;
+  }
+
+  .billContainer {
+    padding: 5px;
+  }
 }
