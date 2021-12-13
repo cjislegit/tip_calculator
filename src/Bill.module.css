@@ -47,8 +47,9 @@
   .bill {
     align-self: flex-start;
     flex: 1;
-    justify-self: center;
+    justify-self: start;
     margin-top: 0;
+    width: 95%;
   }
 
   .billContainer input[type='text'] {

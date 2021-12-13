@@ -46,8 +46,9 @@
 @media (min-width: 900px) {
   .numberOfPeople {
     grid-column-start: 1;
-    justify-self: center;
+    justify-self: start;
     margin-top: 0;
+    width: 95%;
   }
 
   .numberOfPeopleContainer input[type='text'] {

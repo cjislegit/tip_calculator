@@ -60,8 +60,9 @@ button {
 @media (min-width: 900px) {
   .selectTip {
     grid-column-start: 1;
-    justify-self: center;
+    justify-self: start;
     margin-top: 10px;
+    width: 95%;
   }
 
   .selectTipContainer input,
