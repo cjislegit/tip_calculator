@@ -17,12 +17,7 @@ const Total = ({ tipTotal, total, handleReset }) => {
         </div>
         <div className={styles.totalRight}>${total}</div>
       </div>
-      <button
-        className={tipTotal == 0 ? styles.inactive : styles.active}
-        onClick={handleReset}
-      >
-        RESET
-      </button>
+      <button onClick={handleReset}>RESET</button>
     </div>
   );
 };

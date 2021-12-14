@@ -44,13 +44,10 @@
   font-weight: 700;
   width: 100%;
   max-width: 100%;
-}
-
-.inactive {
   background-color: var(--Dark-grayish-cyan);
 }
 
-.active {
+.total button:hover {
   background-color: var(--Strong-cyan);
 }
 
