@@ -28,14 +28,14 @@ function App() {
     } else if (billAmount == 0) {
       setTipTotal(0);
       setTotal(0);
-      setTipAmount(5);
+      setTipAmount(0);
     }
   };
 
   const handleReset = () => {
     setTipTotal(0);
     setTotal(0);
-    setTipAmount(5);
+    setTipAmount(0);
     setBillAmount(0);
   };
 

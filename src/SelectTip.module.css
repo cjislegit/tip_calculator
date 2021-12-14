@@ -34,7 +34,7 @@ button {
   font-size: large;
 }
 
-.selectTipContainer .active {
+.selectTipContainer button:hover {
   background-color: var(--Strong-cyan);
   color: var(--Very-dark-cyan);
   outline: none;
