@@ -21,4 +21,7 @@ Users should be able to:
 
 ### Links
 
+- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Live Site URL: [Vercel Link](https://tip-calculator-pdqu3hhcr-cjislegit.vercel.app/)
+
 In Progress
