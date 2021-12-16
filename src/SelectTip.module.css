@@ -9,6 +9,8 @@
 .selectTipLabel {
   align-self: flex-start;
   margin-bottom: 5px;
+  font-weight: 700;
+  font-size: small;
 }
 
 .selectTipContainer {
@@ -53,6 +55,10 @@ button {
   outline-color: var(--Strong-cyan);
 }
 
+.selectTipContainer input[type='text']:hover {
+  border: var(--Strong-cyan) solid;
+}
+
 .selectTipContainer input[type='text']::placeholder {
   color: var(--Very-dark-cyan);
 }
@@ -68,6 +74,6 @@ button {
   .selectTipContainer input,
   button {
     width: 30%;
-    height: 35px;
+    height: 40px;
   }
 }

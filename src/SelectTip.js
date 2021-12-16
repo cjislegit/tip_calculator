@@ -1,6 +1,6 @@
 import styles from './SelectTip.module.css';
 
-const SelectTip = ({ setTipAmount, activeButton, handleTip }) => {
+const SelectTip = ({ handleTip }) => {
   return (
     <div className={styles.selectTip}>
       <div className={styles.selectTipLabel}>Select Tip %</div>
