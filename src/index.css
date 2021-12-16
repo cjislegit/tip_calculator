@@ -16,6 +16,7 @@
   font-family: 'Space Mono', monospace;
   box-sizing: border-box;
   color: var(--Dark-grayish-cyan);
+  font-weight: 400;
 }
 
 body,

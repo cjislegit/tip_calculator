@@ -23,6 +23,10 @@
   color: var(--Very-dark-cyan);
 }
 
+.billContainer:hover {
+  border: var(--Strong-cyan) solid;
+}
+
 .billContainer input[type='text'] {
   background-color: var(--Light-grayish-cyan);
   border: none;
