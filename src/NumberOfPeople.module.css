@@ -9,8 +9,21 @@
 }
 
 .numberOfPeopleLabel {
+  display: flex;
   align-self: flex-start;
+  justify-content: space-between;
   margin-bottom: 5px;
+  font-size: small;
+  font-weight: 700;
+  width: 100%;
+}
+
+.notZero {
+  display: none;
+}
+
+.zero {
+  color: red;
   font-size: small;
   font-weight: 700;
 }
