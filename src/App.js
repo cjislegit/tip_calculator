@@ -7,7 +7,7 @@ import SelectTip from './SelectTip';
 import Total from './Total';
 
 function App() {
-  const [billAmount, setBillAmount] = useState(0);
+  const [billAmount, setBillAmount] = useState();
   const [tipAmount, setTipAmount] = useState(5);
   const [numberOfPeople, setNumberOfPeople] = useState(1);
   const [tipTotal, setTipTotal] = useState(0);

@@ -15,6 +15,7 @@ const Bill = ({ billAmount, setBillAmount }) => {
           type='text'
           value={billAmount}
           onChange={(e) => setBillAmount(e.target.value)}
+          placeholder='0'
         />
       </div>
     </div>
