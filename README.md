@@ -26,7 +26,7 @@ Users should be able to:
 
 - React
 - HTML
-- Vanilla CSS
+- CSS Modules
 - Vercel
 
 ### Screenshot
