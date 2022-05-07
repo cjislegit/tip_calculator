@@ -4,11 +4,10 @@ This is a solution to the [Tip Calculator App challenge on Frontend Mentor](http
 
 ## Table of Contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Tech](#tech)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+- [The challenge](#the-challenge)
+- [Tech](#tech)
+- [Screenshot](#screenshot)
+- [Links](#links)
 
 ### The Challenge
 
